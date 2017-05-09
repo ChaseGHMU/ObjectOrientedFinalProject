@@ -1,13 +1,13 @@
-#Lambda Expressions, Closures, or Functions as Types
-###Topics Discussed
+# Lambda Expressions, Closures, or Functions as Types
+### Topics Discussed
 * Lambda Expressions, Closures, or Functions as Types
 
-###Background
+### Background
 Lambda expressions, closures, and functions as types are topics that related to functional programming. A closure is a term for storing a method as a variable. Java supports closure through the use of functional interfaces and lambda expressions. C# supports closure through the use of delegates and lambda expressions.
 
 ---
 
-###Java
+### Java
 Java closures come in the form of lambda expressions. In Java, lambda expressions are a concise way to represent using functional interfaces with anonymous inner classes.
 
 Anonymous classes are expressions that allow for declaring and instantiating classes all at once. An anonymous class declaration includes the **new** keyword, the name of an interface to implement or class to extend, arguments to a constructor (not needed for interface), and a class declaration. (When a class is defined within another class, it is called an "inner class" So, when a lambda expression is used within another class, it is precise representation of an anonymous "inner" class)
@@ -40,7 +40,7 @@ Lambda expressions allow programmers to be more concise with code and eliminate 
 
 ---
 
-###C#
+### C#
 In C#, lambda expressions are anonymous functions that can be used to create **delegates**. A **delegate** is a type in C# that can hold method signatures and can be passed as arguments or returned from function calls similar to the way lambda expressions and anonymous inner classes behave in Java. Delegates in C# are derived from a class in the .NET framework suitably named **Delegate**. Delegate types cannot be inherited.
 
 Consider the following creation of a delegate:
@@ -90,3 +90,13 @@ This example would print "Penguins don't run". By using lambda expressions to cr
 
 
 ---
+#### Code
+[LambdaExample.java](LambdaExample.java)
+
+[LambdaExample.cs](LambdaExample.cs)
+
+#### Previous Page
+[14. Errors and Exception Handling](14ErrorsAndExceptionHandling.md)
+
+#### Next Page
+[16. Implementation of Listeners and Event Handlers](16ImplementationOfListenersAndEventHandlers.md)
