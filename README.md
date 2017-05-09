@@ -1,6 +1,6 @@
 # Object Oriented Final Project
 
-Team Member: Aaron Smith
+Team Member: **Aaron Smith**
 
 Languages
 --- 
@@ -8,6 +8,8 @@ Languages
 ![logo](https://snag.gy/E4ZyCe.jpg)
 
 For this project, I will be making a comparison of Java and C#. I decided to compare Java and C# because I am going to need to know C# for work at Monsanto over the summer and I wanted to learn it in the context of a language I was confident in.
+
+For ease of use, I pulled code files from their packages so they could be easily linked to. If you want to see full packages, please refer to the two .zip files *CSharpExamples.zip* and *JavaExamples.zip*
 
 Table of Contents
 --- 
