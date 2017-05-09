@@ -1,10 +1,10 @@
-#Properties
-###Topics Discussed
+# Properties
+### Topics Discussed
 * Getters and setters...write your own or built in?
 * Backing variables?
 * Computed properties?
 
-###Background
+### Background
 A property is a special class member type that is similar to a field, but must be handled through special functions called "getters" and "setters." Practically, a property is a private field that may be updated and read through method calls. This helps protect data integrity and validation, makes it easy to update data, and allows for read-only fields.
 
 Properties usually make use of backing variables, which is the a special name given to the private field which can be retrieved by getter or modified by some other computing accessor.
@@ -13,7 +13,7 @@ Properties also make use of computed properties. Computed properties do not stor
 
 ---
 
-###Java
+### Java
 Congratulations, you have made it to the part of our tale where C# and Java are different. Unlike C#, Java does not innately support properties through built in getters and setters. You can, however, create your own. You can include a private field in a class that can be retrieved and modified through your own public get and set methods. In Java, a self created property would look something like the following:
 
 ```java
@@ -37,7 +37,7 @@ Java also provides a Properties class that can manage key/value pairs. Each key 
 
 ---
 
-###C#
+### C#
 C# has full support of properties with getter and setters built in. A get accessor can be used to return property values, and a set accessor can be used to assign new values. A "value" keyword is also used to define the value being given in the set accessor. You can modify the get and set accessors if you want to implement a computed property, or you can let C# auto-implement the get and set definitions.
 
 ```csharp
@@ -83,3 +83,14 @@ public class Penguin {
   {get; set;}
 }
 ```
+---
+#### Code
+[PropertyExample.java](PropertyExample.java)
+
+[PropertyExample.cs](PropertyExample.cs)
+
+#### Previous Page
+[6. Instance Reference Name](6InstanceReferenceName.md)
+
+#### Next Page
+[8. Interfaces and Protocols](8InterfacesAndProtocols.md)
