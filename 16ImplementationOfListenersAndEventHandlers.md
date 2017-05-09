@@ -1,13 +1,13 @@
-#Implementation of Listeners and Event Handlers
-###Topics Discussed
+# Implementation of Listeners and Event Handlers
+### Topics Discussed
 * Listeners and Event Handlers
 
-###Background
+### Background
 Any proper app responds to user input. However, in order to respond to users, a program needs some way to know that input has occurred. This is where listeners and event handlers come in. Listeners and event handlers notify applications when something happens in a GUI interface and perform actions assigned to them.
 
 ---
 
-###Java
+### Java
 In Java, events are handled using event classes and listener interfaces. In many cases, the listener is a functional interface that can be replaced by a lambda expression as described **here**. A listener interface includes the signature methodology for handling the desired event. To use a listener, you must implement the interface in the class you would like to trigger it or extend from a class that implements it. The class to use it should include methods for adding and removing the listener.
 
 As an example, consider the following example of a NetBeans JavaFX startup template:
@@ -36,7 +36,7 @@ In this example, a **Button** object is created and assigned an **EventHandler**
 
 ---
 
-###C#
+### C#
 C#  uses **events** and **delegates** to build event handlers and listeners and respond to input by users or changes in the system. In C#, delegates are used to bind events to methods that can handle them. When an event occurs, it is up to the delegate to call the handler method. A cool feature of C# is that a delegate can have multiple events bind to the same method so that different actions can have the same results.
 
 There are two event situations in C#; implementing an event without specific data and implementing an event with specific data.
@@ -89,3 +89,15 @@ private void InitializeComponent()
 When the button is pressed, a Click event is triggered and the button1_Click() method occurs, which writes the message to Console.
 
 ---
+#### Code
+[EventExample.java](EventExample.java)
+
+[C# Event Form1.Designer.cs](Form1.Designer.cs)
+
+[C# Event Form1.cs](Form1.cs)
+
+#### Previous Page
+[15. Lambda Expressions, Closures, or Functions as Types](15LambdaExpressions.md)
+
+#### Next Page
+[17. Singletons](17Singleton.md)
