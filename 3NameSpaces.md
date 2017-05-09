@@ -1,12 +1,12 @@
-#Name Spaces
-###Topics Discussed
+# Name Spaces
+### Topics Discussed
 * How are name spaces implemented?
 * How are name spaces used?
-###Background
+### Background
 In programming, namespaces are areas of code that have the same scope of identifiers. Namespaces are used to organize code by separating groups of types, functions, variables, and other code elements. They also prevent name collisions by making sure there is only one declaration of a name for a given element.
 
 ------
-###Java
+### Java
 Name spaces in Java are handled through the use of packages. A package provides access protection and name management for a group of classes and interfaces.
 
 **Implementing a package**
@@ -59,7 +59,7 @@ import decisions.*;
 Action myAction = new Action();
 ```
 ------
-###C#
+### C#
 Name spaces in C# are handled through the use of literal "namespaces." Namespaces are used in the .NET framework to organize classes and control the scope of a class and method names.
 
 **Implementing a namespace**
@@ -152,3 +152,11 @@ Decisions.BadDecisions.Action myActionThree = new Decisions.BadDecisions.Action(
 ```
 
 ------
+
+### Previous Page 
+
+[2. Unique Features](2UniqueFeatures.md)
+
+### Next Page
+
+[4. Types](4Types.md)
