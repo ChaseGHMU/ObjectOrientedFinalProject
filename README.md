@@ -33,7 +33,7 @@ I decided to go with Java and C# because I am going to need to know C# for work 
 
 [11. Memory Management](11MemoryManagement.md)
 
-[12. Comparisons of References and Values](12ComparisonsOfReferencesAndValues)
+[12. Comparisons of References and Values](12ComparisonsOfReferencesAndValues.md)
 
 [13. Null or Nil References](13NullOrNilReferences.md)
 
