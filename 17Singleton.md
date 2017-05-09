@@ -153,3 +153,15 @@ public sealed class PenguinSingleton
 Like the others, this method also delays instantiation until the object is first accessed.
 
 ---
+#### Code
+[SingletonExample.java](SingletonExample.java)
+
+[PenguinSingleton.java](PenguinSingleton.java)
+
+[SingletonExample.cs](SingletonExample.cs)
+
+#### Previous Page
+[16. Implementation of Listeners and Event Handlers](16ImplementationOfListenersAndEventHandlers.md)
+
+#### Next Page
+[18. Procedural Programming](18ProceduralProgramming.md)
