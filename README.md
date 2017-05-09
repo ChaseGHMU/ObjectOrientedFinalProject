@@ -53,3 +53,9 @@ Table of Contents
 [19. Functional Programming](19FunctionalProgramming.md)
 
 [20. Multi-Threading](20Multithreading.md)
+
+Major Takeaways
+---
+* Java and C# are incredibly similar
+* Delegates are cool
+* It is extremely foolish to do a project by yourself
