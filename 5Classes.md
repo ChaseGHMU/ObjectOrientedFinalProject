@@ -141,6 +141,11 @@ Penguin MyPenguinPeach = new Penguin(3,"Female","Galapagos");
 Similar to Java, in C# all garbage collection is done for you. There is no destructing objects manually. When the Java garbage collector determines the object is done being used, it destroys the object and frees that memory. This happens when there is no longer a reference to the object.
 
 ---
+#### Code
+[Penguin.java](Penguin.java)
+
+[CSharpClassExample.cs](CSharpClassExample.cs)
+
 #### Previous Page
 
 [4. Types](4Types.md)
