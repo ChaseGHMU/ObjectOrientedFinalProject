@@ -1,14 +1,14 @@
-#Multithreading
-###Topics Discussed
+# Multithreading
+### Topics Discussed
 * Threads or thread-like abilities?
 * How is multitasking accomplished?
 
-###Background
+### Background
 Many applications will need to be able to do more than one action at a single time. Examples of this include audio streaming and downloading or reading files. If an application cannot multitask, it will likely have a poor user experience. An app should always seem responsive, even when it is hard at work. Without the ability to multitask, buttons in GUI interfaces would seem to freeze and users would be forced to wait for functions to finish before they could continue. People enjoy pushing buttons, and they hate waiting. Many programming languages solve this problem with the use of threads or thread-like abilities. A thread is a lightweight process that with a self-contained execution environment. Both Java and C# use threads to perform multitasking.
 
 ---
 
-###Java
+### Java
 In Java, each thread must associated be the class **Thread**. In order to create a thread, a class must either implement the **Runnable** interface or extend the **Thread** class. In either case, the class should provide an implementation of the **run()** method. Consider the following examples on creating threads:
 
 The first example implements the **Runnable** functional interface
@@ -117,7 +117,7 @@ In this application, you can press both buttons and have a threads output at the
 
 ---
 
-###C#
+### C#
 C# also uses threads to handle multiple interactions at a time. Each C# has a main thread that executes at runtime and ends with the Main method. For using multiple threads beyond the main, C# includes the **System.Threading** namespace. **System.Threading** includes classes for handling threads. Threads created and executed outside of the primary thread are called *worker threads*.
 
 To create a thread in C#, you must start with an object with a method you want to run in the thread. Once you have that object, you can create a thread to reference its method. Consider the following object:
@@ -167,3 +167,18 @@ class Program
 By using **Thread** and **ThreadStart**, the methods defined in the **Penguin** object can be used simultaneously and separate from the main thread. Notice that the threads begin with a **Start()** method, similar to Java. You can also base multiple threads off of one object.
 
 ---
+#### Code
+[MultiThreadExample.java](MultiThreadExample.java)
+
+[PenguinRunnable.java](PenguinRunnable.java)
+
+[PenguinThread.java](PenguinThread.java)
+
+[ThreadExample.cs](ThreadExample.cs)
+
+#### Previous Page
+[19. Functional Programming](19FunctionalProgramming.md)
+
+#### Next Page
+[README.md](README.md)
+
