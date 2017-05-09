@@ -1,13 +1,15 @@
-#Inheritance/Extension
-###Topics Discussed
+# Inheritance/Extension
+### Topics Discussed
 * Object Oriented Inheritance
 
-###Background
+### Background
 Inheritance is an object oriented paradigm that involves allowing classes to *inherit* states and/or behavior from other classes. If a new class requires all of the members of a previously established one, it could inherit them. Inheritance helps with code reuse by allowing programmers to extend and modify behaviors that already exist without having to rewrite the entire behaviors.
 
  Any class that inherits from another is considered a subclass and the class it inherits from is called a superclass or parent. When a class inherits from another class it gains all of the members of the base class except for any constructors. The subclass can then extend its functionality by adding more members.
 
-###Java
+---
+
+### Java
 In Java, inheritance is simple to achieve. A subclass can be formed using the **extends** keyword. When a class extends, it inherits from a superclass. Each class can only extend from one other class. Consider the following example:
 
 First, we create a superclass called **Bird**
@@ -56,7 +58,8 @@ public class Penguin extends Bird {
 ```
 At this point, any instances of the **Penguin** class will have access to members from both **Penguin** and **Bird**.
 
-###C#
+---
+### C#
 In C#, a subclass can be formed using the symbol **:** . Just like Java, when a class uses **:** it inherits all of the members from a superclass. Also just like Java, C# does not support multiple inheritance. You may only inherit from one superclass. Consider the same example from above coded in C#:
 
 First, we create the same superclass called **Bird**
@@ -104,3 +107,21 @@ public class Penguin : Bird {
 ```
 
 At this point, any instances of the **Penguin** class will have access to members from both **Penguin** and **Bird**.
+
+---
+#### Code
+[InheritanceExample.java](InheritanceExample.java)
+
+[NonFlyingBird.java](NonFlyingBird.java)
+
+[Bird.java](Bird.java)
+
+[SubPenguin.java](SubPenguin.java)
+
+[InheritanceExample.cs](InheritanceExample.cs)
+
+#### Previous Page
+[8. Interfaces and Protocols](8InterfacesAndProtocols.md)
+
+#### Next Page
+[10. Reflection](10Reflection.md)
