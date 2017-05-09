@@ -1,4 +1,4 @@
-# Functional programming
+# Functional Programming
 ### Topics Discussed
 * Does the language support functional programming?
 
@@ -16,3 +16,9 @@ Java supports functional programming through the use of lambda expressions and a
 C# supports functional programming through the use of delegates. The ability of delegates to hold method signatures and to pass functionality as parameters helps C# enter the functional programming paradigm.
 
 ---
+
+#### Previous Page
+[18. Procedural Programming](18ProceduralProgramming.md)
+
+#### Next Page
+[20. Multi-Threading](20Multithreading.md)
