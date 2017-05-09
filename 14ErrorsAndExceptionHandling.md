@@ -1,13 +1,13 @@
-#Errors and Exception Handling
+# Errors and Exception Handling
 ###Topics Discussed
 * Errors and Exceptions
 
-###Background
+### Background
 Sometimes programs don't work out the way we hope they will. Errors are commonplace at runtime. If they are not handled properly, errors can disrupt the flow of an application. Nowadays most programming languages have ways to handle errors so that they will not turn programs into a complete trainwreck. Both Java and C# use *exceptions* to handle error events. Exceptions are any events that occur that disrupt the normal process of a program.
 
 ---
 
-###Java
+### Java
 When an error occurs within a method of a Java application, the method creates an *exception object* that contains the error type and state of the program when it happened. This event is referred to as *throwing an exception*. If an exception occurs, the JVM will look for a way to handle it. There are blocks of code that users can create to take care of exceptions called *exception handlers*. An exception handler will be chosen as long as it matches the type for the exception object. When an exception handler triggers, it is called *catching*. If an exception occurs and is not caught, then the application will terminate and the user will be sad.
 
 There are three types of exceptions including *checked exceptions*, *errors*, and *runtime exceptions*. Checked exceptions are ones that applications can anticipate and handle. Errors are external to the application and cannot be recovered from. Although an application could check for them, it makes more sense to just terminate the program. The final exception type is a runtime exception and is internal to the application but not possible to recover from. These types of errors should be dealt with by fixing bugs instead of catching. Errors and runtime exceptions are often called *unchecked exceptions* since it makes less sense to check for them.
@@ -57,7 +57,7 @@ In Java, exception types are part of a heirarchy. All exception types inherit fr
 
 ---
 
-###C#
+### C#
 Similar to Java, exceptions are created when a method interrupts at runtime. Exceptions are created by the CLR, third-party libaries, or application code using the *throw* keyword. When an exception occurs, the CLR looks for a recent method with a *catch* block that matches the exception type. If a catch block matches, the CLR will run that code. If not, the program will terminate and the user will be sad.
 
 C# handles exceptions in the same way as Java. It uses *try*,*catch*, and *finally* statements to find and deal with exceptions. The program will attempt to run code in a try block. If an exception is thrown, the catch blocks will be examined to determine if there is a matching exception type. Finally will trigger regardless of whether an exception is caught or not.
@@ -99,3 +99,15 @@ finally {
 ```
 
 This code will attempt to open a file. If it is unable to do so, it will trigger an exception and search for a catch block to handle it. If a catch block with a matching exception type is found, the catch block code will trigger and print out the exception information to the console. Regardless of whether an exception is caught, a finally block will trigger.
+
+----
+#### Code
+[ErrorExample.java](ErrorExample.java)
+
+[ErrorExample.cs](ErrorExample.cs)
+
+#### Previous Page
+[13. Null or Nil References](13NullOrNilReferences.md)
+
+#### Next Page
+[15. Lambda Expressions, Closures, or Functions as Types](15LambdaExpressions.md)
