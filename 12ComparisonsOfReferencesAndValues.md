@@ -1,11 +1,13 @@
-#Comparisons of References and Values
-###Topics Discussed
+# Comparisons of References and Values
+### Topics Discussed
 * How are values compared? (i.e. comparing two strings)
 
-###Background
+### Background
 In programming, logic decisions are often employed to determine how a program should run. This makes comparing objects extremely important.
 
-###Java
+---
+
+### Java
 In Java, there are two types of equality, reference and value. When making comparisons in Java, you should first decide the type of comparison you would like to make. Reference equality is when two references point to the same object. If two objects have the same reference, they would be considered equal under comparisons using "==". Value equality is when two objects actually have the same value. In order to check for value equality, you must use the "equals()" method. All objects have an equals() method since it belongs to the Object class that all objects inherit from.
 
 Example of proper use of "==" using the **Bird** class
@@ -51,7 +53,10 @@ public static void main(String[] args) {
     }
 }
 ```
-###C#
+
+---
+
+### C#
 C# also has multiple ways to compare. However, they are the exact opposite as Java. In C# reference equality is compared using the **ReferenceEquals** method to determine if their object reference is the same. If **ReferenceEquals** is used on value types, it will always return false.
 
 Value equality in C# is compared using '==' and '!='. They will check whether two objects contain the same values. These can also be used for primitive data types. When comparing, you should always type of consider what comparison you want so that you choose the correct comparison method.
@@ -102,3 +107,15 @@ static void Main(string[] args) {
     }
 }
 ```
+
+---
+#### Code
+[ComparisonExample.java](ComparisonExample.java)
+
+[ComparisonExample.cs](ComparisonExample.cs)
+
+#### Previous Page
+[11. Memory Management](11MemoryManagement.md)
+
+#### Next Page
+[13. Null or Nil References](13NullOrNilReferences.md)
