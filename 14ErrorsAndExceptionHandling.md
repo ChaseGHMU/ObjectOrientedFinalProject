@@ -1,5 +1,5 @@
 # Errors and Exception Handling
-###Topics Discussed
+### Topics Discussed
 * Errors and Exceptions
 
 ### Background
