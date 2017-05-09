@@ -1,13 +1,15 @@
-#Reflection
-###Topics Discussed
+# Reflection
+### Topics Discussed
 * What reflection abilities are supported?
 * How is reflection used?
 
-###Background
+### Background
 
 Reflection refers to the ability of a language to examine and manipulate its own parts at runtime. Reflection can be used to monitor code and make modifications if necessary. Reflection can inspect classes, interfaces, fields, and methods and can instantiate new objects, invoke methods, and manipulate field values.
 
-###Java
+---
+
+### Java
 Java boasts many reflective abilities through the Java Reflection API. The Java Reflection API is made up of objects that represent parts of a class and abilities for extracting those objects. The most important pieces of the Java Reflection API is the special class named **Class** and the **java.lang.reflect** package. All class loaders in Java return an object of type Class that keeps track of meta information to describe them. There are many methods within **Class** that can be used to study an object. Some of the more important ones include forName, getName, getConstructor, getMethod, getField, getSuperclass, getInterfaces, etc. Anything you may want to know about a class is most likely part of the Reflection API.
 
 To use reflection in Java you must first get the class of the object you want to study. Then, you can call any of the reflective methods on it. As an example, consider the **Bird** object from the previous section:
@@ -62,7 +64,9 @@ public class ReflectionExample {
 
 The output would return all of the **Bird** methods and methods retrieved from the superclass **Object** that all objects inherit from. This could be done for any of the other methods. You could also modify your program to invoke methods or create new instances of an object if you obtain information from reflection that you would like to trigger.
 
-###C#
+---
+
+### C#
 Similar to Java, C# provides classes to handle reflection capabilities. C# makes use of its **System.Reflection** and **System.Type** namespaces to obtain information about assemblies, classes, interfaces, and value types at run time. The highlighted classes of C# reflection include Assembly, Module, ConstructorInfo, MethodInfo, FieldInfo, EventInfo, PropertyInfo, ParameterInfo, and CustomAttributeData. Each includes a variety of methods that can be used to discover different information about the framework of an application. Also just like Java, C# can create instances and invoke instance methods using reflection. The class Emit has methods that enable the building of types at runtime.
 
 It is worth noting that when using reflection in C#, you are never actually working directly with classes. When you reqeust information the CLR returns a **RunTime** type, which inherits from **Type**.
@@ -116,3 +120,15 @@ class Program
 ```
 
 This would successfully print out all of the Bird methods and any inherited methods by using reflection.
+
+---
+#### Code
+[ReflectionExample.java](ReflectionExample.java)
+
+[ReflectionExample.cs](ReflectionExample.cs)
+
+#### Previous Page
+[9. Inheritance and Extension](9InheritanceAndExtension.md)
+
+#### Next Page
+[11. Memory Management](11MemoryManagement.md)
